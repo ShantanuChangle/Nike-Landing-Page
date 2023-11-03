@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-family: "Gilroy";
+    overflow-y: hidden;
+}
+
+#transition{
+    height: 100vh;
+    width: 100%;
+    background-color: #2C3546;
+}
+
+#transition img{
+    height: 50%;
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation-name: nike;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;  
+    position: relative; 
+    background-color: #2C3546;
+    overflow: hidden;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#main>img{
+    z-index: 9999;
+    position: absolute;
+    top: 20%;
+    right: 18%;
+    height: 55%;
+    transform: rotateY(180deg) rotateZ(30deg);
+    filter: brightness(1.5);
+    scale: 1;
+    animation-name: popup;
+    animation-duration: 2s;
+    animation-delay: 5.5s;
+}
+
+#main>h1{
+    font-size: 370px;
+    white-space: nowrap;
+    position: absolute;
+    font-size: 800px;
+    left: -5%;
+    z-index: 1;
+    color: black;
+    opacity: .5;
+    animation-name: opaque;
+    animation-duration: 5s;
+    animation-delay: 2s;
+}
+#nav{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    width: 100%;
+    height: 90px;
+    background-color: #2C3546;
+}
+
+#nav img{
+    height: 80px;
+}
+
+#nav-prt1 a{
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    font-weight: 400;
+}
+
+#nav-prt2{
+    z-index: 99999;
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav-prt2 i{
+    padding: 15px 0;
+}
+
+#nav-prt2 h3{
+    padding: 13px 20px;
+    font-weight: 500;
+}
+
+#nav-prt3{
+    z-index: 999999;
+    border: 1px solid transparent;
+    background-color: rgba(255, 255, 255, 0.187);
+    border-radius: 15px;
+    padding: 7px;
+}
+
+#left{
+    height: 100%;
+    width: 55%;
+    background-color: #2C3546;
+    /* position: relative; */
+}
+
+#left h2{
+    position: absolute;
+    top: 27%;
+    left: 9.6%;
+    font-size: 40px;
+    z-index: 99;
+}
+
+#left h1{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+    line-height:70px;
+    font-size: 70px;
+    letter-spacing: 2px;
+    z-index: 99;
+} 
+
+#left h4{
+    position: absolute;
+    width: 20%;
+    font-weight: 400;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    top: 55%;
+    left: 9%;
+    z-index: 99;
+}
+
+#left button{
+    position: absolute;
+    top: 70%;
+    left: 9%;
+    background-color: #ED3666;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border-color: transparent;
+    font-size: 20px;
+    font-weight: 400;   
+    z-index: 99;
+}
+
+#left button:hover{
+    background-color: black;
+}
+
+#icon{
+    position: absolute;
+    top: 50%;
+    left: 9%;
+    height: 80px;
+    width: 200px;
+    z-index: 99;
+}
+
+#icon i{
+    color: gold;
+    padding: 0 5px;
+}
+
+#small{
+    position: absolute;
+    height: 50px;
+    width: 200px;
+    top: 90%;
+    left: 15%;
+}
+#small i{
+    padding: 0 20px;
+}
+
+#left h5{
+    position: absolute;
+    left: 10%;
+    top: 90%;
+    /* padding-bottom: 50px; */
+    font-size: 15px;
+    font-weight: 400;
+
+}
+
+#circle{
+    position: absolute;
+    bottom: 7.8%;
+    left: 8%;
+    height: 30px;
+    width: 30px;
+    background-image: url(https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+
+#right{
+    position:absolute;
+    right: 0;
+    height: 100%;
+    width: 45%;
+    /* background-color: #ED3666; */
+    background: linear-gradient(#ED3666,#ee104ba8);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 35% 100%);
+}
+
+#right h3{
+    position: absolute;
+    top: 87%;
+    right: 12.5%;
+    font-size: 25px;
+    font-weight: 400;
+
+}
+
+#right h2{
+    position: absolute;
+    top: 90%;
+    right: 8%;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#right i{
+    position: absolute;
+    right: 24%;
+    bottom: 5.5%;
+    font-size: 20px;
+    border: 4px solid white;
+    border-radius: 40px;
+    padding: 25px;
+    box-shadow: 0 0 25px rgba(248, 253, 252, 0.31);
+}
+
+@keyframes move {
+        0%{
+            top: 0;
+        }
+
+        100%{
+            top: -100%;
+        }
+}
+
+@keyframes popup {
+        
+        0%{
+            scale: 1;
+        }
+        50%{
+            scale: 1.2;
+        }
+        100%{
+            scale: 1;
+        }
+}
+
+@keyframes nike {
+        
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: 1.2;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
+@keyframes opaque {
+
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 0.5;
+    }
+    
+}
